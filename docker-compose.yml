@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  fastapi_application:
+    depends_on:
+      - fastapi_postgresql_db
+    container_name: fastapi-application
+    stdin_open: true
+    tty: true
+    restart: always
+    build: .
+    ports:
+      - 9899:9899
+    command: >
+      sh -c "uvicorn todoApp.main:app --host 0.0.0.0 --port 9899 --reload"
+    volumes:
+      - ./application:/application
+    env_file:
+      - .env
+
+  fastapi_postgresql_db:
+    container_name: fastapi_postgresql_db
+    image: postgres:14-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - .env
+
+volumes:
+  postgres_data:

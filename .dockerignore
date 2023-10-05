@@ -1,0 +1,38 @@
+# generated files
+*.pyc
+*.pid
+.idea/
+__pycache__/
+
+# database files
+db.sqlite3
+postgresql/
+
+# env directories
+env/
+venv/
+
+# docker files
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+
+# read me
+README.md
+
+# deployment files
+ampio-python-worker-deployment.yaml
+
+# git files
+.gitignore
+.gitmodules
+
+# Proto files
+nimbus_proto
+
+# scripts
+scripts
+
+# poc files
+poc-bidectional.py

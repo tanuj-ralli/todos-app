@@ -1,0 +1,17 @@
+Alembic commands
+
+To initialize new, generic environment
+command: alembic init <folder name>
+for container: docker-compose run --rm fastapi_application sh -c "alembic init alembic"
+
+To create a new revision of the environment
+command: alembic revision -m <message>
+for container: docker-compose run --rm fastapi_application sh -c "alembic revision -m 'added phone column for user table'"
+
+To run upgrade migration to our database
+command: alembic upgrade <revision #>
+for container: docker-compose run --rm fastapi_application sh -c "alembic upgrade 36c8a2b231b2"
+
+To run downgrade migration to our database
+command: alembic downgrade -1
+for container: docker-compose run --rm fastapi_application sh -c "alembic downgrade -1"
