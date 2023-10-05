@@ -4,7 +4,7 @@
 `git clone https://github.com/tanuj-ralli/todos-app.git`
 
 ### Generic project information
-Run server at 0.0.0.0, but it will be accessible at localhost.
+Run server at 0.0.0.0, but it will be accessible at localhost.  
 To open swagger url will be: localhost:port/docs
 
 ### Common Docker Commands:
@@ -19,3 +19,6 @@ https://github.com/codingwithroby/fastapi-the-complete-course
 
 ### Link to Udemy Course: 
 https://www.udemy.com/course/fastapi-the-complete-course
+
+### Certificate:
+https://www.udemy.com/certificate/UC-2d741904-9532-4450-a4ce-e3ea8cb03484/
