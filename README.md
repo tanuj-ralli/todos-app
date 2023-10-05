@@ -5,7 +5,7 @@
 
 ### Generic project information
 Run server at 0.0.0.0, but it will be accessible at localhost.  
-To open swagger url will be: localhost:port/docs
+Swagger url: localhost:9899/docs
 
 ### Common Docker Commands:
 ```
